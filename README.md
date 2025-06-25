@@ -6,10 +6,6 @@ This library implements Shamir Secret Sharing.
 
 I plan to add a GF(2^16) aka 65536 implementation in the future.
 
-# Compatible Libraries
-
-- **Go:** [Zytekaron/squad-go](https://github.com/Zytekaron/squad-go) - with CLI app
-
 # Installation & Usage
 
 ```
@@ -38,7 +34,11 @@ const combined = combineString(shares);
 console.log(combined); // Hello, World!
 ```
 
-More examples in 
+# Compatible Libraries
+
+- **Go:** [Zytekaron/shamir-go](https://github.com/Zytekaron/shamir-go) - with CLI app
+
+More examples in [./examples](./examples).
 
 # License
 
