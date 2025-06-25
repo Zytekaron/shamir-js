@@ -1,0 +1,44 @@
+{
+  "name": "@zytekaron/shamir",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.1-beta",
+  "description": "A Shamir Secret Sharing system implementation.",
+  "author": "Michael Thornes",
+  "license": "MIT",
+  "keywords": [
+    "shamir",
+    "secret",
+    "sharing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zytekaron/shamir-js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "typescript": "^5",
+    "bun-plugin-dts": "^0.3.0"
+  },
+  "dependencies": {
+    "@zytekaron/galois": "0.0.2-beta.4"
+  }
+}
